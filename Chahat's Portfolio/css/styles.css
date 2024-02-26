@@ -968,7 +968,7 @@ form div {
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .navbar {
     background-color: #090a0f;
     border: none;
@@ -1008,6 +1008,9 @@ form div {
   }
   .experiences .flip-cards {
     flex-direction: column;
+  }
+  .flip-card {
+    width: 100%;
   }
   footer p,
   footer a {
