@@ -623,7 +623,7 @@ a {
 /* about section */
 .about-container {
   color: var(--dark-blue);
-  height: 100%
+  height: 100%;
   display: flex;
   backdrop-filter: blur(1px);
   max-width: 80%;
@@ -808,7 +808,7 @@ a {
 
 /* The actual timeline (the vertical ruler) */
 .experiences {
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
 }
 .experiences h2 {
@@ -831,7 +831,10 @@ a {
   gap: 2rem;
 }
 .flip-card {
-  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 3);
   height: 500px;
   perspective: 1000px;
 }
@@ -875,7 +878,7 @@ a {
   text-align: left;
 }
 .flip-card-back h4 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: #fff;
 }
 
@@ -966,28 +969,26 @@ form div {
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-
   .navbar {
     background-color: #090a0f;
     border: none;
   }
-    
-  .navbar .navbar-toggler{
+
+  .navbar .navbar-toggler {
     background-color: var(--gray-blue);
     border: none;
-}
-nav .container{
+  }
+  nav .container {
     background-color: var(--dark-blue);
     margin: 0 auto;
-    }
-    .navbar-collapse ul{
-        padding: 0 1.5rem;
-
-    }
+  }
+  .navbar-collapse ul {
+    padding: 0 1.5rem;
+  }
   .navbar-toggler {
     background-color: #fff !important;
   }
- 
+
   nav .container {
     background-color: #090a0f;
     margin: 0 auto;
@@ -1005,8 +1006,8 @@ nav .container{
   .skills {
     height: unset;
   }
-  .experiences .flip-cards{
-   flex-direction: column;
+  .experiences .flip-cards {
+    flex-direction: column;
   }
   footer p,
   footer a {
