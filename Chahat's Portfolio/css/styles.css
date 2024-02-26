@@ -623,11 +623,12 @@ a {
 /* about section */
 .about-container {
   color: var(--dark-blue);
-  height: calc(100vh - 3.5rem);
+  height: 100%
   display: flex;
   backdrop-filter: blur(1px);
   max-width: 80%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .about-container h1 {
@@ -965,19 +966,28 @@ form div {
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
+
   .navbar {
     background-color: #090a0f;
     border: none;
   }
+    
+  .navbar .navbar-toggler{
+    background-color: var(--gray-blue);
+    border: none;
+}
+nav .container{
+    background-color: var(--dark-blue);
+    margin: 0 auto;
+    }
+    .navbar-collapse ul{
+        padding: 0 1.5rem;
+
+    }
   .navbar-toggler {
-    visibility: hidden;
     background-color: #fff !important;
   }
-  .navbar-toggler-icon {
-    visibility: hidden;
-    display: none;
-    background-image: none !important;
-  }
+ 
   nav .container {
     background-color: #090a0f;
     margin: 0 auto;
@@ -995,7 +1005,9 @@ form div {
   .skills {
     height: unset;
   }
-
+  .experiences .flip-cards{
+   flex-direction: column;
+  }
   footer p,
   footer a {
     font-size: smaller;
