@@ -1,6 +1,6 @@
 :root {
   --dark-blue: #9d4edd;
-  --font-family: 'Roboto', sans-serif;
+  --font-family: "Roboto", sans-serif;
   --dk-purple: #240046;
 }
 
@@ -192,7 +192,7 @@ body {
   animation: animStar 50s linear infinite;
 }
 #stars:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 2000px;
   width: 1px;
@@ -434,7 +434,7 @@ body {
   animation: animStar 100s linear infinite;
 }
 #stars2:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 2000px;
   width: 2px;
@@ -526,7 +526,7 @@ body {
   animation: animStar 150s linear infinite;
 }
 #stars3:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 2000px;
   width: 3px;
@@ -624,11 +624,13 @@ a {
 .about-container {
   color: var(--dark-blue);
   height: 100%;
-  display: flex;
   backdrop-filter: blur(1px);
   max-width: 70%;
   margin: 0 auto;
   box-sizing: border-box;
+}
+.page-heading {
+  display: block;
 }
 
 .about-container h1 {
@@ -836,6 +838,7 @@ a {
   align-items: center;
   justify-content: center;
   width: calc(100% / 3);
+  /* max-width: 250px; */
   height: 500px;
   perspective: 1000px;
 }
@@ -873,6 +876,10 @@ a {
   color: white;
   transform: rotateY(180deg);
   padding: 0.1rem;
+
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
 }
 .flip-card-back p {
   font-size: 1rem;
@@ -893,7 +900,7 @@ a {
 
 /* form */
 .form {
-  background: url('../img/home-bg.jpg');
+  background: url("../img/home-bg.jpg");
 }
 .feedback {
   text-align: end;
@@ -968,7 +975,8 @@ form div {
   animation: pop 1.5s ease-in-out;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
+/* Media queries */
+/*  */
 @media screen and (max-width: 800px) {
   .navbar {
     background-color: #090a0f;
@@ -1013,6 +1021,7 @@ form div {
   .flip-card {
     width: 100%;
   }
+
   footer p,
   footer a {
     font-size: smaller;
